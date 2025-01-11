@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title%}{{ movie | capfirst }}{% endblock title%}
+{% block content %}
+    <p>Has elegido la pelicula: <strong>{{ movies | capfirst }}</strong></p>
+    <h3>Detalles de la pelicula</h3>
+    <ul>
+        <li>title: {{ movie.name }}</li>
+        <li>ID: {{ movie.type }}</li>
+        <li>Genero: {{ movie.gender }}</li>
+        <li>Director: {{ movie.director }}</li>
+        <li>Usuario: {{ movie.user }}</li>
+    </ul>
+{% endblock content %}
